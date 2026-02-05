@@ -1,0 +1,64 @@
+:root {
+  --pink-main: #FF4D6D;
+  --pink-soft: #FFC1CC;
+  --pink-dark: #C9184A;
+  --white-main: #FFFFFF;
+  --white-soft: #FFF1F3;
+}
+.purpose{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+   background: linear-gradient(to right, #8B1E5D, #C94A8A, #F3B6CF, #FFFFFF);
+   width:70%;
+   box-shadow: 2px 2px 0 pink;
+   
+ 
+
+    
+
+}
+@keyframes colorChange {
+  0% {
+    color: var(--white-main);
+    text-shadow: 0 0 5px var(--pink-soft);
+    font-size: 1rem;
+
+  }
+  25% {
+    color: var(--pink-soft);
+    text-shadow: 0 0 10px var(--pink-main);
+    font-size: 2rem;
+    
+  }
+  50% {
+    color: var(--pink-main);
+    text-shadow: 0 0 15px var(--pink-dark);
+    font-size: 1rem;
+  }
+  75% {
+    color: var(--pink-dark);
+    text-shadow: 0 0 10px var(--pink-main);
+    font-size: 3rem;
+  
+  }
+  100% {
+    color: var(--white-soft);
+    text-shadow: 0 0 5px var(--pink-soft);
+    font-size: 1rem;
+  }
+}
+
+.purpose h1 {
+  animation: colorChange 2.5s ease-in-out infinite alternate;
+  font-weight: bold;
+}
+
+@media screen and (max-width:600px){
+  .purpose{
+    width:100%;
+    margin-top: 60px;
+  }
+
+}
+

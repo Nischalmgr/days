@@ -1,0 +1,72 @@
+.chocolate{
+ 
+  background: linear-gradient(
+    160deg,
+    #6b3e26 0%,
+    #4b2a1a 35%,
+    #2a150e 60%,
+    #140a06 100%
+  );
+  color:white;
+  width:600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 3px 1px rgb(57, 29, 29);
+ 
+
+}
+.chocolate-btn{
+    margin-top: 20px;
+    
+}
+.chocolate-btn button{
+    padding:20px 40px;
+    font-size: 1.2rem;
+    color:#4b2a1a;
+    border-radius: 10px;
+    margin-right:20px;
+    transition: all 0.3s ease;
+}
+.chocolate-btn button:hover{
+    transform:scale(1.2)
+}
+
+.yes-choco{
+  display:none;
+  width:700px;
+  background-color: #4b2a1a;
+  height:400px;
+  position:absolute;
+
+}
+
+.no-choco{
+  display:none;
+  width:700px;
+  background-color: #4b2a1a;
+  height:400px;
+  position:absolute;
+
+}
+
+.yes-choco.show{
+  display:block;
+}
+
+.no-choco.show{
+  display:block;
+}
+
+@media screen  and (max-width:600px){
+  .chocolate{
+    width:100%;
+
+  }
+  .yes-choco,.no-choco{
+    width:100%;
+  }
+  
+}
+
+

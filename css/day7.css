@@ -1,0 +1,33 @@
+ 
+.image-holder {
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+
+    animation: images 10s ease-in-out infinite;
+    box-shadow: 2px 2px 2px black;
+}
+
+@keyframes images {
+    0% {
+        background-image: url('../images/kids.jpg');
+    }
+
+    25% {
+        background-image: url('../images/first.jpg');
+    }
+
+    50% {
+        background-image: url('../images/ second.jpg');
+    }
+
+    75% {
+        background-image: url('../images/third.jpg');
+    }
+
+    100% {
+        background-image: url('../images/kids.jpg');
+    }
+}
