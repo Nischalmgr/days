@@ -1,0 +1,64 @@
+.hand{
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    background-color:white;
+    box-shadow:2px 2px 2px black;
+    padding:2px 2px;
+    height: 700px;
+}
+.hand img{
+    width:100%;
+    height: 400px;
+    object-fit: cover;
+
+    
+}
+.hand h1{
+    color :red;
+    margin:10px;
+}
+.yes{
+ 
+    padding:10px 20px;
+ 
+    border-radius: 20px;
+    font-size:1rem;
+    background: linear-gradient(to right,  #ff4f9a, #ffffff);
+    color: var(--white-main);
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+ 
+    transition: all 0.3s ease;
+    margin:10px;
+    width:60%;
+    text-align: center;
+    
+    
+
+}
+
+.yes:hover{
+    background: none;
+     background-color: white;
+    color:var(--pink-main);
+    border:2px solid var(--pink-main);
+    
+}
+
+.dance{
+    display:none;
+    position: absolute;
+    width:80%;
+    height:400px;
+
+}
+.dance img{width:100%;
+    object-fit: contain;
+
+}
+.dance.show{
+    display:block;
+}
