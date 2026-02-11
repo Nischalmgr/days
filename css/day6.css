@@ -1,0 +1,41 @@
+        
+.huggie{
+    width:600px;
+    animation:pics 10s ease-in-out infinite;
+    box-shadow: 2px 2px 2px gray;
+    background-color:pink;
+    background-repeat: no-repeat;   /* no repeat */
+    background-size: contain;       /* fit inside */
+    background-position: center;  
+    height:400px;
+   
+}
+
+@keyframes pics {
+
+    0%{
+        background-image: url('../images/running.gif');
+        
+
+    }
+    20%{
+
+        background-image: url("../images/jump.gif");
+    }
+    40%{
+          background-image: url("../images/wallbreak.gif");
+
+    }
+    60%{
+        
+
+    }
+    80%{
+        background-image: url("../images/highjump.gif");
+
+    }
+    100%{
+        background-image: url("../images/finalhuggie.gif");
+
+    }
+}

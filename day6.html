@@ -4,8 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="css/day6.css" rel="stylesheet">
+ 
     <link href="css/style.css" rel="stylesheet">
+     
+    <style>
+        @keyframes hugs{
+            0%{
+                transform:scale(1.0);
+                color:red;
+            }
+            50%{
+                 transform:scale(1.5);
+                color:pink;
+            }
+            100%{
+                 transform:scale(2);
+                color:white;
+            }
+            
+
+        }
+        h1{
+            color:red;
+            animation: hugs 4s ease-in-out infinite
+        }
+                
+.huggie{
+    width:600px;
+    animation:pics 14s ease-in-out infinite;
+    box-shadow: 2px 2px 2px gray;
+    background-color:pink;
+    background-repeat: no-repeat;   /* no repeat */
+    background-size: contain;       /* fit inside */
+    background-position: center;  
+    height:400px;
+   
+}
+
+@keyframes pics {
+
+    0%,19%{
+        background-image: url('../images/running.gif');
+        
+
+    }
+    20%,39%{
+
+        background-image: url("../images/jump.gif");
+    }
+    40%,59%{
+          background-image: url("../images/wallbreak.gif");
+
+    }
+ 
+        
+
+ 
+    60%,79%{
+        background-image: url("../images/highjump.gif");
+
+    }
+    80%,100%{
+        background-image: url("../images/finalhuggie.gif");
+
+    }
+}
+ 
+    </style>
 </head>
 <body>
         <header>
@@ -23,6 +88,40 @@
     </div>
     <div id = "content">
         <main>
+            <h1> huggiee on the way</h1>
+            <audio src="music/hug.mp3" class="hug"> </audio>
+            <div class="huggie">
+                <div style="display:none">
+  <img src="../images/running.gif">
+  <img src="../images/jump.gif">
+  <img src="../images/wallbreak.gif">
+  <img src="../images/highjump.gif">
+  <img src="../images/finalhuggie.gif">
+</div>
+
+<script>
+const images = [
+  "../images/running.gif",
+  "../images/jump.gif",
+  "../images/wallbreak.gif",
+  "../images/highjump.gif",
+  "../images/finalhuggie.gif"
+];
+
+let i = 0;
+const img = document.getElementById("slide");
+
+setInterval(() => {
+  i = (i + 1) % images.length;
+  img.src = images[i];
+}, 2800); // change every 2.8 sec
+</script>
+               
+
+                
+
+
+            </div>
 
         </main>
     </div>

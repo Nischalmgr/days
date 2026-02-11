@@ -3,7 +3,8 @@
 const countdownEl = document.getElementById("countdown");
 const countdownContainer = document.getElementById("countdown-container");
 const content = document.getElementById("content");
-
+const hug=document.querySelector(".hug");
+hug.play();
 function updateAccess() {
   const now = Date.now();
   const diff = targetDate - now;
