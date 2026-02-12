@@ -6,7 +6,7 @@
     background-position: center;
     border-radius: 2px;
 
-    animation: images 10s ease-in-out infinite;
+    animation: images 10s ease-in-out infinite alternate;
     box-shadow: 2px 2px 2px black;
 }
 
