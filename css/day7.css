@@ -1,0 +1,33 @@
+@keyframes kisses{
+  0%{transform:scale(1);color:red;}
+  50%{transform:scale(1.5);color:pink;}
+  100%{transform:scale(2);color:white;}
+}
+.text{
+    animation:kisses 5s ease-in-out infinite alternate;
+}
+.kiss{
+    width:600px;
+    height: 400px;
+    box-shadow: 2px 2px 2px grey;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+
+}
+.kiss img{
+    width:80%;
+    height:80%;
+    
+    
+}
+@media  screen and (max-width:600px) 
+{
+    .kiss{
+        width:80%
+        
+    }
+    
+}
+
+

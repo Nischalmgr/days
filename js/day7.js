@@ -3,6 +3,8 @@
 const countdownEl = document.getElementById("countdown");
 const countdownContainer = document.getElementById("countdown-container");
 const content = document.getElementById("content");
+const kissme=document.querySelector(".kissme")
+kissme.play();
 
 function updateAccess() {
   const now = Date.now();
