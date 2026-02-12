@@ -31,16 +31,45 @@
                 
 .huggie{
     width:600px;
-    animation:pics 14s ease-in-out infinite;
+ 
     box-shadow: 2px 2px 2px gray;
     background-color:pink;
     background-repeat: no-repeat;   /* no repeat */
     background-size: contain;       /* fit inside */
     background-position: center;  
     height:400px;
+    display: none;
+
+  
+     
+
    
 }
+.huggie.show{
+    display:block;
+}
+.me{
+     text-decoration: none;
+    padding:10px 20px;
+ 
+    border-radius: 20px;
+    font-size:1rem;
+    background: linear-gradient(to right,  #ff4f9a, #ffffff);
+    color: var(--white-main);
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+ 
+    transition: all 0.3s ease;
 
+}
+.me:hover{
+    background:none;
+    background-color: white;
+    color:var(--pink-main);
+    border:2px solid var(--pink-main);
+
+}
 @keyframes pics {
 
     0%,19%{
@@ -98,39 +127,20 @@
     <div id = "content">
         <main>
             <h1> huggiee on the way</h1>
+             <span class="me">Hug me</span>
             <audio src="music/hug.mp3" class="hug"> </audio>
             <div class="huggie">
-                <div style="display:none">
-  <img src="../images/running.gif">
-  <img src="../images/jump.gif">
-  <img src="../images/wallbreak.gif">
-  <img src="../images/highjump.gif">
-  <img src="../images/finalhuggie.gif">
-</div>
+                <span class="close">&times;</span>
+                
 
-<script>
-const images = [
-  "../images/running.gif",
-  "../images/jump.gif",
-  "../images/wallbreak.gif",
-  "../images/highjump.gif",
-  "../images/finalhuggie.gif"
-];
-
-let i = 0;
-const img = document.getElementById("slide");
-
-setInterval(() => {
-  i = (i + 1) % images.length;
-  img.src = images[i];
-}, 2800); // change every 2.8 sec
-</script>
+  
                
 
                 
 
 
             </div>
+            
 
         </main>
     </div>
