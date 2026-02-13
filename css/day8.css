@@ -6,28 +6,92 @@
     background-position: center;
     border-radius: 2px;
 
-    animation: images 10s ease-in-out infinite alternate;
-    box-shadow: 2px 2px 2px black;
+    animation: images 14s ease-in-out infinite alternate;
+    box-shadow: 2px 4px 2px black;
 }
 
 @keyframes images {
     0% {
         background-image: url('../images/kids.jpg');
     }
-
-    25% {
-        background-image: url('../images/first.jpg');
-    }
-
-    50% {
-        background-image: url('../images/ second.jpg');
-    }
-
-    75% {
+    10% {
         background-image: url('../images/third.jpg');
     }
 
-    100% {
-        background-image: url('../images/kids.jpg');
+    20% {
+        background-image: url('../images/first.jpg');
     }
+
+    40% {
+        background-image: url('../images/ second.jpg');
+    }
+
+    60% {
+        background-image: url('../images/mitho.jpg');
+    }
+    80% {
+        background-image: url('../images/third.jpg');
+    }
+
+
+    100% {
+        background-image: url('../images/photo.jpg');
+    }
+}
+@keyframes kisses{
+  0%{transform:scale(1);color:red;}
+  50%{transform:scale(1);color:pink;}
+  100%{transform:scale(1);color:white;}
+}
+.click-me h1,h2{
+    animation:kisses 1s ease-in-out infinite alternate;
+}
+.click-me{
+    display: flex;
+    width:80%;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+}
+.valentine{
+    display:none;
+}
+.valentine.show{
+    display:block;
+
+}
+@media  screen and (max-width:600px) {
+    .image-holder{
+        width:80%;
+    }
+    .click-me{
+        width:80%;
+        height:auto;
+        overflow-x: scroll;
+    }
+    
+}
+
+.click{
+        padding:20px 40px;
+    margin-top:40px;
+    border-radius: 20px;
+    font-size:1.6rem;
+    background: linear-gradient(to right,  #ff4f9a, #ffffff);
+    color: var(--white-main);
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+ 
+    transition: all 0.3s ease;
+    
+    
+}
+.click:hover{
+    background:none;
+    background-color: white;
+    color:var(--pink-main);
+    border:2px solid var(--pink-main);
+    
 }

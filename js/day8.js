@@ -4,6 +4,12 @@ const countdownEl = document.getElementById("countdown");
 const countdownContainer = document.getElementById("countdown-container");
 const content = document.getElementById("content");
 
+
+const song = document.querySelector(".song");
+const me = document.querySelector(".click");
+const box = document.querySelector(".valentine");
+const back = document.querySelector(".close");
+
 function updateAccess() {
   const now = Date.now();
   const diff = targetDate - now;
@@ -28,3 +34,19 @@ function updateAccess() {
  
 updateAccess();
 setInterval(updateAccess, 1000);
+
+me.addEventListener("click",()=>{
+    box.classList.add("show");
+    song.play();
+    
+
+
+})
+
+back.addEventListener("click",()=>{
+    box.classList.remove("show");
+    song.pause();
+    
+
+
+})
